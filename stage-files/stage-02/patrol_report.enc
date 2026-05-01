@@ -1,0 +1,38 @@
+[ENFORCER TACTICAL DISPATCH — ENCRYPTED]
+CHECKPOINT: BRIDGE-7 UPPER GARRISON
+UNIT: Enforcer Division, Bridge Command
+STATUS: POST-UPRISING LOCKDOWN — DAY 14
+CLASSIFICATION: TACTICAL — RESTRICTED
+
+════════════════════════════════════════════════
+
+ENCRYPTION METADATA
+  Method    : Hexcore Resonance Encryption — Stage 2
+  Pipeline  : HEX( XOR(plaintext, repeating_key) )
+  Key Type  : Crystal Signature (repeating, 8 characters)
+  Key Hint  : The family name on the checkpoint crest
+  Key Reuse : CONFIRMED — same key used across 14 dispatches
+  Note      : No Base64 wrapper. Output is raw hexadecimal.
+
+════════════════════════════════════════════════
+
+ENCODED_INTEL:
+081d143a0f1f080a0c0c0d110c1913010716110e001d1301060001040930
+
+════════════════════════════════════════════════
+
+DECRYPTION PIPELINE:
+  Step 1 — Split hex string into 2-character pairs
+  Step 2 — Convert each pair to a decimal byte value
+  Step 3 — XOR each byte with the repeating crystal signature
+  Step 4 — Interpret result as UTF-8 text
+  Step 5 — Recover the Kiramman Key
+
+════════════════════════════════════════════════
+
+SECURITY ADVISORY:
+  Key rotation has been DISABLED since lockdown began.
+  Same 8-character XOR key used for all 14 dispatches.
+  Known-plaintext attack vulnerability: CRITICAL.
+
+ARCHIVE PATH: /kiramman/intel/stage-02/patrol_report.enc
