@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kiramman Archive Terminal — Arcane-inspired CTF challenge console.">
+  <title>Kiramman Archive Terminal | Project Undercity</title>
+  <link rel="stylesheet" href="challenge.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-text">Initializing Archive</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Global Canvas Effects -->
+  <canvas id="matrix-canvas"></canvas>
+  <canvas id="data-streams-canvas"></canvas>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Digital Dust Particles -->
+  <div class="digital-dust" id="digital-dust"></div>
+
+  <header class="archive-header">
+    <div class="brand">
+      <span class="brand-mark">KIRAMMAN ARCHIVES</span>
+      <span class="brand-sub">Hextech Intelligence Terminal</span>
+    </div>
+    <nav class="nav-links">
+      <a class="nav-link" href="index.html">HOME</a>
+      <a class="nav-link nav-link--active" href="challenge.html">ARCHIVES</a>
+      <a class="nav-link" href="#" id="nav-intel-link">INTEL</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-button" aria-label="System status">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 12h6M14 12h6M12 4v6M12 14v6"/>
+        </svg>
+      </button>
+      <button class="icon-button" aria-label="Security lock">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 10V8a6 6 0 0112 0v2"/>
+          <rect x="5" y="10" width="14" height="10" rx="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="challenge-layout">
+    <div class="left-column">
+      <section class="panel panel-archive">
+        <div class="panel-header">
+          <div class="panel-title">Archive Browser</div>
+          <div class="panel-path" id="panel-path">/kiramman/intel/stage-01/</div>
+        </div>
+        <div class="folder-grid" id="folder-grid">
+          <button class="folder-card is-active" data-stage="0">
+            <div class="folder-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12V46C2 48.2 3.8 50 6 50H58C60.2 50 62 48.2 62 46V16C62 13.8 60.2 12 58 12H30L24 4H6C3.8 4 2 5.8 2 8V12Z" class="folder-body"/>
+                <path d="M2 12H62" class="folder-crease"/>
+                <rect x="18" y="22" width="18" height="2" rx="1" class="folder-line"/>
+                <rect x="18" y="28" width="12" height="2" rx="1" class="folder-line"/>
+              </svg>
+            </div>
+            <span class="folder-label">STAGE 01</span>
+            <span class="folder-meta">Piltover Archive</span>
+          </button>
+          <button class="folder-card" data-stage="1">
+            <div class="folder-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12V46C2 48.2 3.8 50 6 50H58C60.2 50 62 48.2 62 46V16C62 13.8 60.2 12 58 12H30L24 4H6C3.8 4 2 5.8 2 8V12Z" class="folder-body"/>
+                <path d="M2 12H62" class="folder-crease"/>
+                <rect x="18" y="22" width="18" height="2" rx="1" class="folder-line"/>
+                <rect x="18" y="28" width="12" height="2" rx="1" class="folder-line"/>
+              </svg>
+            </div>
+            <span class="folder-label">STAGE 02</span>
+            <span class="folder-meta">Bridge Checkpoint</span>
+          </button>
+          <button class="folder-card" data-stage="2">
+            <div class="folder-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12V46C2 48.2 3.8 50 6 50H58C60.2 50 62 48.2 62 46V16C62 13.8 60.2 12 58 12H30L24 4H6C3.8 4 2 5.8 2 8V12Z" class="folder-body"/>
+                <path d="M2 12H62" class="folder-crease"/>
+                <rect x="18" y="22" width="18" height="2" rx="1" class="folder-line"/>
+                <rect x="18" y="28" width="12" height="2" rx="1" class="folder-line"/>
+              </svg>
+            </div>
+            <span class="folder-label">STAGE 03</span>
+            <span class="folder-meta">Zaun Relay</span>
+          </button>
+          <button class="folder-card" data-stage="3">
+            <div class="folder-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12V46C2 48.2 3.8 50 6 50H58C60.2 50 62 48.2 62 46V16C62 13.8 60.2 12 58 12H30L24 4H6C3.8 4 2 5.8 2 8V12Z" class="folder-body"/>
+                <path d="M2 12H62" class="folder-crease"/>
+                <rect x="18" y="22" width="18" height="2" rx="1" class="folder-line"/>
+                <rect x="18" y="28" width="12" height="2" rx="1" class="folder-line"/>
+              </svg>
+            </div>
+            <span class="folder-label">STAGE 04</span>
+            <span class="folder-meta">The Sumps</span>
+          </button>
+        </div>
+        <div class="file-list" id="file-list">
+          <div class="file-item">
+            <span class="file-name">stage-01_brief.txt</span>
+            <span class="file-tag">CLASSIFIED</span>
+          </div>
+          <div class="file-item">
+            <span class="file-name">bridge_trace.log</span>
+            <span class="file-tag">ENCRYPTED</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-intel">
+        <div class="panel-header">
+          <div class="panel-title">Intel &amp; Submission</div>
+          <div class="panel-status" id="stage-status">STAGE 01 - ACTIVE</div>
+        </div>
+
+        <button class="intel-toggle" id="intel-toggle" type="button">REQUEST INTEL</button>
+
+        <div class="intel-block">
+          <div class="intel-label">FLAG SUBMISSION</div>
+          <form class="flag-form" id="flag-form">
+              <label class="sr-only" for="flag-input">Flag input</label>
+            <input class="flag-input" id="flag-input" type="text" placeholder="ENTER FLAG..." autocomplete="off" spellcheck="false">
+            <button class="flag-button" type="submit">SUBMIT FLAG</button>
+          </form>
+          <div class="flag-feedback" id="flag-feedback"></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel panel-terminal">
+      <div class="terminal-header">
+        <span>Hextech Archive Terminal</span>
+        <span class="terminal-status">SECURE LINK - ACTIVE</span>
+      </div>
+      <div class="terminal-screen" id="terminal-screen">
+        <div class="terminal-output" id="terminal-output" role="log" aria-live="polite" aria-atomic="false"></div>
+        <form class="terminal-input-form" id="terminal-form">
+          <label class="terminal-label" for="terminal-input">Terminal input</label>
+          <span class="terminal-prompt" aria-hidden="true">ARCHIVE&gt;</span>
+          <input class="terminal-input" id="terminal-input" type="text" autocomplete="off" spellcheck="false">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="challenge.js"></script>
+</body>
+</html>
+
+
+
+
+
