@@ -1,0 +1,21 @@
+[REFINERY ARCHIVE — FRAGMENT 03 of 03]
+FACILITY: Shimmer Refinery Delta-9
+SYNC LAYER: TERTIARY (Level D)
+RECOVERY STATUS: INTACT
+RECOVERY AGENT: Kiramman Deep Recovery Team — ROOK
+
+════════════════════════════════════════════════
+
+FRAGMENT_DATA (03 of 03):
+EHExcCAgYABS8=
+
+════════════════════════════════════════════════
+
+NOTE: This is the final fragment. The '=' padding indicates
+      the end of the Base64 string — confirm all 3 parts
+      are concatenated before decoding.
+
+COMBINED (all 3 fragments):
+AgYFOhsLBRcRAgcRGA0TEwERDhEMDREHExcCAgYABS8=
+
+ARCHIVE PATH: /kiramman/intel/stage-04/fragment_03.enc

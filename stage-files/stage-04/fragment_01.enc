@@ -1,0 +1,30 @@
+[REFINERY ARCHIVE — FRAGMENT 01 of 03]
+FACILITY: Shimmer Refinery Delta-9
+SYNC LAYER: PRIMARY (Level B)
+RECOVERY STATUS: INTACT
+RECOVERY AGENT: Kiramman Deep Recovery Team — ROOK
+
+════════════════════════════════════════════════
+
+ENCRYPTION METADATA (applies to all 3 fragments combined)
+  Method    : Hexcore Resonance Encryption — Stage 4
+  Pipeline  : Base64( XOR(plaintext, repeating_key) ) → split into 3
+  Key Type  : Crystal Signature (repeating, 6 characters)
+  Key Hint  : The name of this world — 6 letters
+  Fragments : Must be concatenated in order before decryption
+              01 → 02 → 03
+
+════════════════════════════════════════════════
+
+FRAGMENT_DATA (01 of 03):
+AgYFOhsLBRcRAgc
+
+════════════════════════════════════════════════
+
+RECONSTRUCTION PROTOCOL:
+  Collect fragment_01.enc, fragment_02.enc, fragment_03.enc
+  Concatenate FRAGMENT_DATA strings in order: 01 + 02 + 03
+  The combined string is a single valid Base64 payload.
+  Apply: Base64 decode → XOR with 6-character crystal signature.
+
+ARCHIVE PATH: /kiramman/intel/stage-04/fragment_01.enc
