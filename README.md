@@ -10,6 +10,19 @@ URL : https://the-undercity-project.vercel.app/
 
 <img width="1019" height="458" alt="Screenshot 2026-05-01 122540" src="https://github.com/user-attachments/assets/a1646bac-73d0-4b40-a7b7-db4e87e021b8" />
 
+Commands of Archive terminal : <br>
+\hidn ....... Reveal access key for intel  <br>
+\stage ...... Current stage & city details <br>
+\info ....... Problem statement / briefing <br>
+\etrkey ..... Submit flag (enter key) <br>
+
+Utility in Archive terminal : <br>
+│  ls .......... List stage files             │ <br>
+│  cat <file> .. Read file contents           │ <br>
+│  pwd ......... Show current path            │ <br>
+│  intel ....... Request classified intel     │ <br>
+│  clear ....... Clear terminal               | <br>
+
 Types of encriptions used <br>
 STAGE 1 — Base64 Encoded Repeating XOR Cipher <br>
 STAGE 2 — Repeating-Key XOR Encryption <br>
@@ -25,3 +38,4 @@ CTF Key for stage1(For testing and validating) : <br>
 CTF{HEXCORE_ARCHIVES_UNLOCKED} <br>
 
 <img width="1905" height="1064" alt="Screenshot 2026-04-30 195741" src="https://github.com/user-attachments/assets/32131045-cf45-42a4-bf21-33c92b960acd" />
+
