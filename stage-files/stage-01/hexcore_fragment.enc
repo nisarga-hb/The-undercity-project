@@ -1,0 +1,31 @@
+> INTERCEPTED HEXCORE TRANSMISSION
+> SIGNAL INTEGRITY: 94.2%
+> RESONANCE BAND: ALPHA-7
+> SOURCE: Hexcore Chamber, Upper Piltover
+> CAPTURE TIME: Progress Day +3, 02:17:44 UTC
+
+════════════════════════════════════════════════
+
+ENCRYPTION METADATA
+  Method    : Hexcore Resonance Encryption — Stage 1
+  Pipeline  : Base64( XOR(plaintext, repeating_key) )
+  Key Type  : Crystal Signature (repeating, 8 characters)
+  Key Hint  : The name of this city
+
+════════════════════════════════════════════════
+
+ENCODED_INTEL:
+Ex0KLwcTHREfGwkLDgQGGhkfCQcQAwseHwoHEQsr
+
+════════════════════════════════════════════════
+
+DECRYPTION PIPELINE:
+  Step 1 — Base64 decode the ENCODED_INTEL string
+  Step 2 — XOR each decoded byte with the repeating crystal signature
+  Step 3 — Interpret result as UTF-8 text
+  Step 4 — Recover the Kiramman Key
+
+════════════════════════════════════════════════
+
+DECRYPTION STATUS: AWAITING ANALYST CLEARANCE
+ARCHIVE PATH: /kiramman/intel/stage-01/hexcore_fragment.enc

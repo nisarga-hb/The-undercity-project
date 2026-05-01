@@ -1,0 +1,44 @@
+[KIRAMMAN INTELLIGENCE ARCHIVE — CLASSIFIED]
+TIMESTAMP: Progress Day +3, 02:17 UTC
+ORIGIN: Hexcore Research Wing, Upper Piltover
+PRIORITY: CRITICAL
+CLASSIFICATION: HOUSE KIRAMMAN — EYES ONLY
+
+════════════════════════════════════════════════
+
+INCIDENT REPORT — UNAUTHORIZED HEXCORE TRANSMISSION
+
+On the evening of Progress Day, three hours following Jayce Talis'
+presentation to the Merchant Council, the Kiramman private
+surveillance relay detected an unauthorized transmission emanating
+from the Hexcore research wing.
+
+Signal origin: Viktor's experimental Hexcore chamber, sublevel 3.
+Duration: 11 seconds before collapse.
+Signal routing: bypassed all council-approved relay nodes.
+
+Our network captured a single encoded fragment before the signal
+vanished entirely.
+
+════════════════════════════════════════════════
+
+TECHNICAL ANALYSIS
+
+Encoding method confirmed: Hexcore Resonance Encryption, Stage 1.
+Pipeline: Base64( XOR(plaintext, repeating_crystal_signature) )
+
+The crystal signature (XOR key) is tied to this city.
+Key length: 8 characters.
+
+ANALYST NOTE:
+This is a transport encoding, not a true cipher. The Base64
+wrapper is the outer layer. XOR is applied beneath it.
+Decode Base64 first. Then XOR each byte with the repeating key.
+
+Recommend immediate decryption and escalation to senior council.
+
+════════════════════════════════════════════════
+
+— Filed by: Surveillance Analyst Mira
+— Authorized by: House Kiramman Intelligence Division
+— Archive Path: /kiramman/intel/stage-01/council_intercept.log
