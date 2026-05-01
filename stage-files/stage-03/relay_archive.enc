@@ -1,0 +1,38 @@
+[ZAUN UNDERGROUND RELAY — INTERCEPTED FRAGMENT]
+NODE: BOUNDARY-MARKETS-RELAY-9
+ORIGIN: Benzo's Workshop (abandoned), Lower Zaun
+SUSPECTED MODIFIER: Firelight Network (attributed to Ekko)
+INTERCEPTION DATE: Unknown
+
+════════════════════════════════════════════════
+
+ENCRYPTION METADATA
+  Method    : Hexcore Resonance Encryption — Stage 3
+  Pipeline  : Base64( XOR( byte+13 mod256(plaintext), key ) )
+  Key Type  : Crystal Signature (repeating, 7 characters)
+  Key Hint  : The power source of Piltover — 7 letters
+  Layers    : TWO transformations applied before Base64
+
+  WARNING: First decode is NOT the final plaintext.
+           A mathematical byte transform is applied beneath the XOR layer.
+
+════════════════════════════════════════════════
+
+ENCODED_INTEL:
+GCQLyy8HExIfChwjDRcRCz4vHgAVFBQKEsU=
+
+════════════════════════════════════════════════
+
+DECRYPTION PIPELINE:
+  Step 1 — Base64 decode the ENCODED_INTEL string
+  Step 2 — XOR each decoded byte with the repeating crystal signature (7 chars)
+  Step 3 — Subtract 13 from each byte value (mod 256)
+  Step 4 — Interpret result as UTF-8 text
+  Step 5 — Recover the Kiramman Key
+
+════════════════════════════════════════════════
+
+RELAY ROUTING (fragmented, partially recovered):
+  NODE_09 > BOUNDARY_MARKETS > LAST_DROP > VANDER_STATUE
+
+ARCHIVE PATH: /kiramman/intel/stage-03/relay_archive.enc

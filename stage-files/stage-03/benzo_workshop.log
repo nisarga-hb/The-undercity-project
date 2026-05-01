@@ -1,0 +1,39 @@
+[RECOVERED FROM BENZO'S WORKSHOP — PARTIAL DOCUMENT]
+LOCATION: Lower Zaun, near Boundary Markets
+CONDITION: Water-damaged. Partially legible.
+RECOVERED BY: Kiramman Field Agent, designation SPARROW
+
+════════════════════════════════════════════════
+
+NOTE FOUND INSIDE TERMINAL CASING
+(handwritten, attributed to Ekko's modifications)
+
+"Changed the encoding on this relay. Twice as hard now.
+
+The old enforcers just did XOR and called it a day.
+I added a byte shift underneath — add 13 to every
+character code before you XOR it. Wraps around at 256.
+
+So to decode properly:
+  1. Base64 decode the output first
+  2. XOR each byte with the key
+  3. Then subtract 13 from each byte (mod 256)
+  4. THEN you have the real message
+
+The key is 7 letters. It's what powers their fancy
+gemstones up in Piltover. They named it after the stuff
+that runs through every Hextech device.
+
+Base64 wrapper on top of everything. Good luck, enforcer.
+You'll need it."
+
+════════════════════════════════════════════════
+
+ANALYST NOTE:
+  Inner byte transform: add 13 to each plaintext byte
+  Outer XOR key: 7-character word (the power source)
+  Wrapper: Base64
+
+  Reverse order: Base64 decode → XOR → subtract 13 mod 256
+
+— Archive Path: /kiramman/intel/stage-03/benzo_workshop.log
