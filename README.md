@@ -45,3 +45,5 @@ CTF{HEXCORE_ARCHIVES_UNLOCKED} <br>
 
 <img width="1905" height="1064" alt="Screenshot 2026-04-30 195741" src="https://github.com/user-attachments/assets/32131045-cf45-42a4-bf21-33c92b960acd" />
 
+AI Used : 
+AI has been used to design the challeges in the website, debug the design flaws and improve the code structure to make it easy to understand.
