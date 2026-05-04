@@ -23,18 +23,24 @@ Utility in Archive terminal : <br>
 │  intel ....... Request classified intel     │ <br>
 │  clear ....... Clear terminal               | <br>
 
+**Steps to solve the mistry :** <br>
+1. enter the challeges page from home page -> Press on stage or Type \stage to reveal the challenge -> Use command \hidn to unlock the intel
+2. Download the data files provided in the left side panel -> Read the file for clues and ways to disipher the flag.
+
+
 Types of encriptions used <br>
 STAGE 1 — Base64 Encoded Repeating XOR Cipher <br>
 STAGE 2 — Repeating-Key XOR Encryption <br>
 STAGE 3 — Layered XOR + Mathematical Byte Transformation <br>
 STAGE 4 — Fragmented Multi-Layer Resonance Encryption <br>
 
+**Refer these to learn about encription menthods used**
 About details on encription used : <br>
 [XOR Ciper](https://www.geeksforgeeks.org/dsa/xor-cipher/) <br>
 [Repeating-Key XOR Encryption](https://www.geeksforgeeks.org/python/encrypt-using-xor-cipher-with-repeating-key/) <br>
 [Layered XOR](https://www.tutorialspoint.com/cryptography/cryptography_xor_encryption.htm) <br>
 
-CTF Key for stage1(For testing and validating) : <br>
+**CTF Key for stage1(For testing and validating) :** <br>
 CTF{HEXCORE_ARCHIVES_UNLOCKED} <br>
 
 <img width="1905" height="1064" alt="Screenshot 2026-04-30 195741" src="https://github.com/user-attachments/assets/32131045-cf45-42a4-bf21-33c92b960acd" />
